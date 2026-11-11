@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tsobena Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-text">
+                <img src="../images/logo.png">
+            </a>
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="destination.html" class="nav-item">Destinations</a>
+                <a href="tours.html" class="nav-item">Tours</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="contact.html" class="nav-item active">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p>Plan Your Adventure With Us</p>
+        </div>
+        <div class="content-wrapper">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p><i class="fa-solid fa-location-dot"></i> Airport Road, Maun, Botswana</p>
+                    <p><i class="fa-solid fa-phone"></i> +267 686 1234</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@tsobenatourism.co.bw</p>
+                </div>
+                <form onsubmit="handleForm(event)" class="contact-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- BOOKING MODAL -->
+    <div id="booking-modal" class="modal-backdrop">
+        <div class="modal-box">
+            <h2>Book Your Adventure</h2>
+            <form onsubmit="handleBooking(event)">
+                <input type="text" id="modal-pkg" placeholder="Tour or Destination" class="input-field">
+                <input type="text" placeholder="Full Name" required class="input-field">
+                <input type="email" placeholder="Email Address" required class="input-field">
+                <input type="date" required class="input-field">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

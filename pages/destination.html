@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Tsobena Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-text">
+                <img src="../images/logo.png">
+            </a>
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="destination.html" class="nav-item active">Destinations</a>
+                <a href="tours.html" class="nav-item">Tours</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="contact.html" class="nav-item">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-secondary">
+            <div class="hero-overlay-dark"></div>
+            <div class="hero-secondary-content">
+                <span class="sub-category">DESTINATIONS</span>
+                <h1>Explore Our Destinations</h1>
+                <p>Discover the beauty, wildlife, culture, and adventure that Botswana has to offer.</p>
+            </div>
+        </div>
+
+        <div class="filter-bar">
+        </div>
+
+        <div class="content-wrapper">
+            <div class="cards-grid">
+                <div class="card" data-category="wildlife nature">
+                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="Okavango Delta">
+                    <div class="card-body">
+                        <h3>Okavango Delta</h3>
+                        <p>Serene waterways, abundant wildlife, and world-class luxury eco-camps.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1534177616072-ef7dc120449d?auto=format&fit=crop&w=800&q=80" alt="Chobe River">
+                    <div class="card-body">
+                        <h3>Chobe National Park</h3>
+                        <p>Home to the densest elephant population in Africa and river boat safaris.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-category="adventure nature">
+                    <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Makgadikgadi Salt Pans">
+                    <div class="card-body">
+                        <h3>Makgadikgadi Salt Pans</h3>
+                        <p>Endless salt flats, quad biking, meerkat encounters, and zebra migrations.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80" alt="Tsodilo Hills">
+                    <div class="card-body">
+                        <h3>Tsodilo Hills</h3>
+                        <p>UNESCO Heritage site with over 4,500 ancient rock art paintings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- BOOKING MODAL -->
+    <div id="booking-modal" class="modal-backdrop">
+        <div class="modal-box">
+            <h2>Book Your Adventure</h2>
+            <form onsubmit="handleBooking(event)">
+                <input type="text" id="modal-pkg" placeholder="Tour or Destination" class="input-field">
+                <input type="text" placeholder="Full Name" required class="input-field">
+                <input type="email" placeholder="Email Address" required class="input-field">
+                <input type="date" required class="input-field">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

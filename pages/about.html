@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tsobena Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-text">
+                <img src="../images/logo.png">
+            </a>
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item active">About Us</a>
+                <a href="destination.html" class="nav-item">Destinations</a>
+                <a href="tours.html" class="nav-item">Tours</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="contact.html" class="nav-item">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>About Us</h1>
+            <p>Discover. Explore. Experience</p>
+        </div>
+        <div class="content-wrapper">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Guiding Your Journey in Botswana</h2>
+                    <p>Tsobena Tourism delivers authentic, eco-friendly safari experiences across Botswana. From the floods of the Okavango Delta to the vast Kalahari plains, we create lifelong memories for world travelers.</p>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Local Experts</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Years Operating</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5k+</h3>
+                            <p>Happy Safari Guests</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80" alt="African Safari Experience">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- BOOKING MODAL -->
+    <div id="booking-modal" class="modal-backdrop">
+        <div class="modal-box">
+            <h2>Book Your Adventure</h2>
+            <form onsubmit="handleBooking(event)">
+                <input type="text" id="modal-pkg" placeholder="Tour or Destination" class="input-field">
+                <input type="text" placeholder="Full Name" required class="input-field">
+                <input type="email" placeholder="Email Address" required class="input-field">
+                <input type="date" required class="input-field">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

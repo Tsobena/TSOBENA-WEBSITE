@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours & Packages - Tsobena Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-text">
+                <img src="../images/logo.png">
+            </a>
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="destination.html" class="nav-item">Destinations</a>
+                <a href="tours.html" class="nav-item active">Tours</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="contact.html" class="nav-item">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Tours & Packages</h1>
+            <p>Curated Safaris Tailored to You</p>
+        </div>
+        <div class="content-wrapper">
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <div class="tour-header">
+                        <h3>Okavango Mokoro Safari</h3>
+                        <span class="tour-duration">4 Days / 3 Nights</span>
+                    </div>
+                    <div class="tour-body">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Traditional Mokoro Dugout Excursions</li>
+                            <li><i class="fa-solid fa-check"></i> Guided Bush & Bird Walks</li>
+                            <li><i class="fa-solid fa-check"></i> Full Board Luxury Tent Stay</li>
+                        </ul>
+                        <div class="tour-footer">
+                            <span class="price">$1,250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card highlight-card">
+                    <div class="tour-header">
+                        <h3>Chobe Elephant Express</h3>
+                        <span class="tour-duration">5 Days / 4 Nights</span>
+                    </div>
+                    <div class="tour-body">
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Sunset Chobe River Cruises</li>
+                            <li><i class="fa-solid fa-check"></i> Daily Open 4x4 Game Drives</li>
+                            <li><i class="fa-solid fa-check"></i> Day Excursion to Victoria Falls</li>
+                        </ul>
+                        <div class="tour-footer">
+                            <span class="price">$1,680</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- BOOKING MODAL -->
+    <div id="booking-modal" class="modal-backdrop">
+        <div class="modal-box">
+            <h2>Book Your Adventure</h2>
+            <form onsubmit="handleBooking(event)">
+                <input type="text" id="modal-pkg" placeholder="Tour or Destination" class="input-field">
+                <input type="text" placeholder="Full Name" required class="input-field">
+                <input type="email" placeholder="Email Address" required class="input-field">
+                <input type="date" required class="input-field">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
